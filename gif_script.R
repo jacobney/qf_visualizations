@@ -6,7 +6,7 @@ library(dplyr)
 library(tidyr)
 
 ## list file names and read in
-imgs <- list.files("C:\\Users\\neyja\\OneDrive\\Documents\\GitHub\\qf_visualizations\\Spelling\\THANKS!\\PNG_Output", full.names = TRUE)
+imgs <- list.files("C:\\Users\\neyja\\OneDrive - Colostate\\Documents\\GitHub\\qf_visualizations\\Spelling\\THANKS!\\PNG_Output", full.names = TRUE)
 img_list <- lapply(imgs, image_read)
 
 ## join the images together
@@ -20,4 +20,4 @@ img_animated
 
 ## save to directory
 image_write(image = img_animated,
-            path = "C:\\Users\\neyja\\OneDrive\\Documents\\GitHub\\qf_visualizations\\Spelling\\THANKS!\\THANKS!_R.gif")
+            path = "C:\\Users\\neyja\\OneDrive - Colostate\\Documents\\GitHub\\qf_visualizations\\Spelling\\THANKS!\\THANKS!_R.gif")
